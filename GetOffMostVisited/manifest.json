@@ -1,0 +1,35 @@
+{
+  "manifest_version": 2,
+
+  "name": "Getoff Most Visited",
+  "description": "This extension hides most visited in New Tab page",
+  "version": "1.0",
+  
+  "background": {
+    "persistent": false,
+    "scripts": ["action4newtab.js"]
+  },
+
+  "browser_action": {
+    "default_icon": "icon.png"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["removeRedundant.js"],
+      "css": ["style.css"]
+    }
+  ],
+
+  "options_page": "options.html",
+
+  "permissions": [
+    "tabs",
+    "activeTab",
+    "background",
+    "storage",
+    "https://ajax.googleapis.com/",
+    "https://*.google.com/"
+  ]
+}

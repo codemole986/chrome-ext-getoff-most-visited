@@ -1,0 +1,15 @@
+
+body.chrome_extension_getoffMostVisited > * {display: none !important;}
+body.chrome_extension_getoffMostVisited #most-visited {display: none !important;}
+
+body.chrome_extension_getoffMostVisited.chrome_extension_getoffMostVisited_show_mngb #mngb {
+	display: block !important;	
+}
+
+body.chrome_extension_getoffMostVisited.chrome_extension_getoffMostVisited_show_lga #lga {
+	display: block !important;	
+}
+
+body.chrome_extension_getoffMostVisited.chrome_extension_getoffMostVisited_show_form form {
+	display: block !important;	
+}
